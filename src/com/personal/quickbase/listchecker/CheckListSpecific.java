@@ -12,6 +12,12 @@ public class CheckListSpecific {
 		// TODO Auto-generated constructor stub
 	}
 	
+	/**
+	 * 
+	 * 
+	 * @param list
+	 * @return
+	 */
 	// add in this specific implementation due to the instructions being somewhat unclear
 		// Wanted to be safe
 		public LargestIntegersSpecific checkSpecificImplementation(){
@@ -23,7 +29,12 @@ public class CheckListSpecific {
 			return largestIntegersSpecific;
 		}
 		
-		
+		/**
+		 * 
+		 * 
+		 * @param list
+		 * @return
+		 */
 		private List<Integer> createFirstList(){
 			List<Integer> firstList = new ArrayList<Integer>();
 			firstList.add(5);

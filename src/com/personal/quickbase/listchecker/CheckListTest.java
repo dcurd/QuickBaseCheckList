@@ -295,6 +295,32 @@ public class CheckListTest {
 		assertEquals(obj2.getSecondLargestInteger(),Integer.valueOf(5));
 	}
 	
+	@Test
+	public void testNegativeIntegers(){
+		List<Integer> testList = new ArrayList<Integer>();
+		testList.add(-5);
+		testList.add(-1);
+		testList.add(-10);
+		CheckList checkList = new CheckList();
+		LargestIntegers obj = checkList.check(testList);
+		
+		assertEquals(obj.getFirstLargestInteger(),Integer.valueOf(-1));
+		assertEquals(obj.getSecondLargestInteger(),Integer.valueOf(-5));
+	}
+	
+	@Test
+	public void testNegativePositiveIntegers(){
+		List<Integer> testList = new ArrayList<Integer>();
+		testList.add(-5);
+		testList.add(1);
+		testList.add(-1);
+		CheckList checkList = new CheckList();
+		LargestIntegers obj = checkList.check(testList);
+		
+		assertEquals(obj.getFirstLargestInteger(),Integer.valueOf(1));
+		assertEquals(obj.getSecondLargestInteger(),Integer.valueOf(-1));
+	}
+	
 	
 
 }
