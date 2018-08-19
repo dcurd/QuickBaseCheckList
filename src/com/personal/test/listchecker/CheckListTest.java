@@ -13,7 +13,6 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 import com.personal.test.listchecker.objects.LargestIntegers;
-import com.personal.test.listchecker.objects.LargestIntegersSpecific;
 
 public class CheckListTest {
 	
@@ -296,18 +295,6 @@ public class CheckListTest {
 		assertEquals(obj2.getSecondLargestInteger(),Integer.valueOf(5));
 	}
 	
-	@Test 
-	public void testSpecficImplementation(){
-		CheckList checkList=new CheckList();
-		LargestIntegersSpecific largestIntegersSpecific=checkList.checkSpecificImplementation();
-		assertEquals(largestIntegersSpecific.getFirstListLargestIntegers().getFirstLargestInteger()
-				,Integer.valueOf(175));
-		assertEquals(largestIntegersSpecific.getFirstListLargestIntegers().getSecondLargestInteger()
-				,Integer.valueOf(150));
-		assertEquals(largestIntegersSpecific.getSecondListLargestIntegers().getFirstLargestInteger()
-				,Integer.valueOf(114));
-		assertEquals(largestIntegersSpecific.getSecondListLargestIntegers().getSecondLargestInteger()
-				,Integer.valueOf(97));
-	}
+	
 
 }
