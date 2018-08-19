@@ -1,4 +1,4 @@
-package com.personal.test.listchecker.objects;
+package com.personal.quickbase.listchecker.objects;
 
 public class LargestIntegers {
 

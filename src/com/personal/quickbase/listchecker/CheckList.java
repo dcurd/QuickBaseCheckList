@@ -1,10 +1,10 @@
-package com.personal.test.listchecker;
+package com.personal.quickbase.listchecker;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.personal.test.listchecker.objects.LargestIntegers;
-import com.personal.test.listchecker.objects.LargestIntegersSpecific;
+import com.personal.quickbase.listchecker.objects.LargestIntegers;
+import com.personal.quickbase.listchecker.objects.LargestIntegersSpecific;
 
 public class CheckList {
 

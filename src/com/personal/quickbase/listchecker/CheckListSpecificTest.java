@@ -1,10 +1,10 @@
-package com.personal.test.listchecker;
+package com.personal.quickbase.listchecker;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.personal.test.listchecker.objects.LargestIntegersSpecific;
+import com.personal.quickbase.listchecker.objects.LargestIntegersSpecific;
 
 public class CheckListSpecificTest {
 

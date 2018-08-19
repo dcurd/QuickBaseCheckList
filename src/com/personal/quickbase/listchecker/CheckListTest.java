@@ -1,4 +1,4 @@
-package com.personal.test.listchecker;
+package com.personal.quickbase.listchecker;
 
 import static org.junit.Assert.*;
 
@@ -12,7 +12,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import com.personal.test.listchecker.objects.LargestIntegers;
+import com.personal.quickbase.listchecker.objects.LargestIntegers;
 
 public class CheckListTest {
 	
