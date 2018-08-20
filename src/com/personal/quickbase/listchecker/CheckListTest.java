@@ -19,6 +19,9 @@ public class CheckListTest {
 	@Rule
 	public final ExpectedException expectedException=ExpectedException.none();
 
+	/*
+	 * Test For Exception and Message to be thrown if no elements in ArrayList
+	 */
 	@Test
 	public void testSizesNoIntegerArrayList() {
 		List<Integer> testArrayList=new ArrayList<Integer>();
@@ -31,6 +34,9 @@ public class CheckListTest {
 		
 	}
 	
+	/*
+	 * Test for Exception and Message to be thrown if only one element in ArrayList
+	 */
 	@Test
 	public void testSizesOneIntegerArrayList() {
 		List<Integer> testArrayList=new ArrayList<Integer>();
@@ -44,6 +50,9 @@ public class CheckListTest {
 		
 	}
 	
+	/*
+	 * Test for Exception and Message to be thrown if no element in LinkedList
+	 */
 	@Test
 	public void testSizesNoIntegerLinkedList() {
 		List<Integer> testLinkedList=new LinkedList<Integer>();
@@ -56,6 +65,9 @@ public class CheckListTest {
 		
 	}
 	
+	/*
+	 * Test for Exception and Message to be thrown if only one element in LinkedList
+	 */
 	@Test
 	public void testSizesOneIntegerLinkedList() {
 		List<Integer> testLinkedList=new LinkedList<Integer>();
@@ -68,6 +80,9 @@ public class CheckListTest {
 		
 	}
 	
+	/*
+	 * Test for Exception and Message to be thrown if no element in Vector
+	 */
 	@Test
 	public void testSizesNoIntegerVector() {
 		List<Integer> testVector=new Vector<Integer>();
@@ -79,7 +94,9 @@ public class CheckListTest {
 		
 	}
 	
-	
+	/*
+	 * Test for Exception and Message to be thrown if only one element in Vector
+	 */
 	@Test
 	public void testSizesOneIntegerVector() {
 		List<Integer> testVector=new Vector<Integer>();
@@ -91,7 +108,9 @@ public class CheckListTest {
 		checkList.check(testVector);
 		
 	}
-	
+	/*
+	 * Test for Exception and Message to be thrown if no elements in Stack
+	 */
 	
 	@Test
 	public void testSizesNoIntegerStack() {
@@ -104,6 +123,10 @@ public class CheckListTest {
 		
 	}
 	
+	/*
+	 * Test for Exception and Message to be thrown if only one element in Stack
+	 */
+	
 	@Test
 	public void testSizesOneIntegerStack() {
 		List<Integer> testStack=new Stack<Integer>();
@@ -114,6 +137,11 @@ public class CheckListTest {
 		expectedException.expectMessage("List has less than two (2) integers");
 		checkList.check(testStack);
 	}
+	
+	/*
+	 * Test for functionality with ArrayList for first list listed within exercise 
+	 * { 5,100,10,125,15,150,20,175,25,0 } 
+	 */
 	
 	@Test
 	public void  testFirstListImplementationArrayList(){
@@ -136,6 +164,11 @@ public class CheckListTest {
 		assertEquals(obj.getSecondLargestInteger(),Integer.valueOf(150));
 	}
 	
+	/*
+	 * Test for functionality with ArrayList for second list listed in exercise
+	 * { 25,93,97,18,71,114,52,48 }
+	 */
+	
 	@Test
 	public void  testSecondListImplementationArrayList(){
 		CheckList checkList=new CheckList();
@@ -154,6 +187,11 @@ public class CheckListTest {
 		assertEquals(obj.getFirstLargestInteger(),Integer.valueOf(114));
 		assertEquals(obj.getSecondLargestInteger(),Integer.valueOf(97));
 	}
+	
+	/*
+	 * Test for functionality with LinkedList for first list listed within exercise 
+	 * { 5,100,10,125,15,150,20,175,25,0 } 
+	 */
 	
 	@Test
 	public void  testFirstListImplementationLinkedList(){
@@ -176,6 +214,11 @@ public class CheckListTest {
 		assertEquals(obj.getSecondLargestInteger(),Integer.valueOf(150));
 	}
 	
+	/*
+	 * Test for functionality with LinkedList for second list listed in exercise
+	 * { 25,93,97,18,71,114,52,48 }
+	 */
+	
 	@Test
 	public void  testSecondListImplementationLinkedList(){
 		CheckList checkList=new CheckList();
@@ -194,6 +237,11 @@ public class CheckListTest {
 		assertEquals(obj.getFirstLargestInteger(),Integer.valueOf(114));
 		assertEquals(obj.getSecondLargestInteger(),Integer.valueOf(97));
 	}
+	
+	/*
+	 * Test for functionality with Vector for first list listed within exercise 
+	 * { 5,100,10,125,15,150,20,175,25,0 } 
+	 */
 	
 	@Test
 	public void  testFirstListImplementationVector(){
@@ -216,6 +264,11 @@ public class CheckListTest {
 		assertEquals(obj.getSecondLargestInteger(),Integer.valueOf(150));
 	}
 	
+	/*
+	 * Test for functionality with Vector for second list listed in exercise
+	 * { 25,93,97,18,71,114,52,48 }
+	 */
+	
 	@Test
 	public void  testSecondListImplementationVector(){
 		CheckList checkList=new CheckList();
@@ -234,6 +287,11 @@ public class CheckListTest {
 		assertEquals(obj.getFirstLargestInteger(),Integer.valueOf(114));
 		assertEquals(obj.getSecondLargestInteger(),Integer.valueOf(97));
 	}
+	
+	/*
+	 * Test for functionality with Stack for first list listed within exercise 
+	 * { 5,100,10,125,15,150,20,175,25,0 } 
+	 */
 	
 	@Test
 	public void  testFirstListImplementationStack(){
@@ -256,6 +314,11 @@ public class CheckListTest {
 		assertEquals(obj.getSecondLargestInteger(),Integer.valueOf(150));
 	}
 	
+	/*
+	 * Test for functionality with Stack for second list listed in exercise
+	 * { 25,93,97,18,71,114,52,48 }
+	 */
+	
 	@Test
 	public void  testSecondListImplementationStack(){
 		CheckList checkList=new CheckList();
@@ -274,6 +337,11 @@ public class CheckListTest {
 		assertEquals(obj.getFirstLargestInteger(),Integer.valueOf(114));
 		assertEquals(obj.getSecondLargestInteger(),Integer.valueOf(97));
 	}
+	
+	/*
+	 * Test with list with only two integers; test verifies that this does not 
+	 * depend on position of each element
+	 */
 	
 	@Test
 	public void testTwoIntegers(){
@@ -295,6 +363,10 @@ public class CheckListTest {
 		assertEquals(obj2.getSecondLargestInteger(),Integer.valueOf(5));
 	}
 	
+	/*
+	 * Test covers a list with only negative integers as elements
+	 */
+	
 	@Test
 	public void testNegativeIntegers(){
 		List<Integer> testList = new ArrayList<Integer>();
@@ -307,6 +379,12 @@ public class CheckListTest {
 		assertEquals(obj.getFirstLargestInteger(),Integer.valueOf(-1));
 		assertEquals(obj.getSecondLargestInteger(),Integer.valueOf(-5));
 	}
+	
+	/*
+	 * Test covers a list with a mix of Negative and Positive Integers 
+	 * as elements in List
+	 */
+			
 	
 	@Test
 	public void testNegativePositiveIntegers(){

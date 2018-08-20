@@ -8,6 +8,11 @@ import com.personal.quickbase.listchecker.objects.LargestIntegersSpecific;
 
 public class CheckListSpecificTest {
 
+	/*
+	 * tests for specific implementation of two lists as defined by the exercise.
+	 * First List:{ 5,100,10,125,15,150,20,175,25,0 } 
+	 * Second List:{ 25,93,97,18,71,114,52,48 }
+	 */
 	@Test
 	public void testCheckSpecificImplementation() {
 			CheckListSpecific checkList=new CheckListSpecific();

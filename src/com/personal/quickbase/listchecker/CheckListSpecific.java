@@ -13,13 +13,14 @@ public class CheckListSpecific {
 	}
 	
 	/**
+	 * Checks the specific implementations of { 5,100,10,125,15,150,20,175,25,0 } and
+	 * { 25,93,97,18,71,114,52,48 } with CheckList functionality
 	 * 
 	 * 
-	 * @param list
-	 * @return
+	 * @return LargestIntegersSpecific POJO that contains the LargestIntegers POJO for
+	 * both lists
 	 */
-	// add in this specific implementation due to the instructions being somewhat unclear
-		// Wanted to be safe
+	
 		public LargestIntegersSpecific checkSpecificImplementation(){
 			LargestIntegersSpecific largestIntegersSpecific = new LargestIntegersSpecific();
 			List<Integer> firstList=createFirstList();
@@ -30,10 +31,10 @@ public class CheckListSpecific {
 		}
 		
 		/**
-		 * 
+		 * Creates first list of { 5,100,10,125,15,150,20,175,25,0 }
 		 * 
 		 * @param list
-		 * @return
+		 * @return List of { 5,100,10,125,15,150,20,175,25,0 }
 		 */
 		private List<Integer> createFirstList(){
 			List<Integer> firstList = new ArrayList<Integer>();
@@ -49,6 +50,13 @@ public class CheckListSpecific {
 			firstList.add(0);
 			return firstList;
 		}
+		
+		/**
+		 * Creates second list of { 25,93,97,18,71,114,52,48 } 
+		 * 
+		 * @param list
+		 * @return List of { 25,93,97,18,71,114,52,48 } 
+		 */
 		
 		private List<Integer> createSecondList(){
 			List<Integer> secondList = new ArrayList<Integer>();

@@ -2,6 +2,9 @@ package com.personal.quickbase.listchecker.objects;
 
 public class LargestIntegersSpecific {
 
+	/*
+	 * POJO for specific lists listed in exercise
+	 */
 	LargestIntegers firstListLargestIntegers = new LargestIntegers();
 	LargestIntegers secondListLargestIntegers = new LargestIntegers();
 	public LargestIntegersSpecific() {
